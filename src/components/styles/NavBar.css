@@ -1,0 +1,32 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  background: rgb(0, 213, 224);
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  width: 99%;
+}
+
+.menus {
+  justify-content: flex-start;
+  text-align: start;
+}
+
+nav a {
+  border-radius: 4px;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #007bff;
+}
+
