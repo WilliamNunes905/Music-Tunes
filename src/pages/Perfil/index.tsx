@@ -3,6 +3,7 @@ import Header from '../../components/Header';
 import NavBar from '../../components/NavBar';
 import { getUser } from '../../services/userAPI';
 import { UserType } from '../../types';
+import styles from './perfil.module.css';
 
 function Perfil() {
   const initialUser = {
@@ -24,7 +25,7 @@ function Perfil() {
     <div>
       <Header>Perfil</Header>
       <NavBar />
-      <h2>
+      <h2  className={ styles.namePerfil }>
         Seja bem-vindo:
         {' '}
         { user?.name }

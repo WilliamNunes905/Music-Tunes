@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-.nav-link {
+.navLink {
   background: rgb(0, 213, 224);
   display: inline-block;
   list-style: none;

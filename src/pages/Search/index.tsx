@@ -8,6 +8,7 @@ import Header from '../../components/Header';
 import Main from '../../components/Main';
 import NavBar from '../../components/NavBar';
 import AlbumCard from '../../components/AlbumCard';
+import styles from './search.module.css';
 
 export default function Search() {
   const [artistName, setArtistName] = useState('');
@@ -39,12 +40,12 @@ export default function Search() {
             onChange={ (event) => handleChange(event) }
             value={ artistName }
             placeholder="Digite sua busca aqui"
-            className="search-artist-input"
+            className={ styles.searchArtistInput }
           />
           <Button
             type="button"
             onClick={ () => handleClick() }
-            className="search-artist-button"
+            className={ styles.searchArtistButton }
             disabled={ artistName.length < 2 }
           >
             Pesquisar
@@ -59,12 +60,12 @@ export default function Search() {
           albums.length > 0 && (
             <div>
               <br />
-              <ul className="container-ul">
+              <ul className={ styles.containerUl }>
                 {
                 albums.map((album) => (
                   <div
                     key={ album.collectionId }
-                    className="container-albums"
+                    className={ styles.containerAlbums }
                   >
                     <AlbumCard
                       artworkUrl100={ album.artworkUrl100 }

@@ -1,0 +1,9 @@
+.containerMain {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 500px; /* Define a altura total da tela */
+    justify-content: center;
+    margin-top: 1300px;
+    text-align: center;
+}

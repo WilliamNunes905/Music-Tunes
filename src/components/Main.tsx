@@ -1,4 +1,4 @@
-import './styles/Main.css';
+import styles from './styles/Main.module.css';
 
 type MainProps = {
   children: any;
@@ -7,7 +7,7 @@ type MainProps = {
 export default function Main({ children }: MainProps) {
   return (
     <div>
-      <main className="container-main">
+      <main className={ styles.containerMain }>
         { children }
       </main>
     </div>

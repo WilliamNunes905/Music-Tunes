@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { createUser } from '../../services/userAPI';
 import { Loading } from '../../components/Loading';
 import Button from '../../components/Button';
-import './login.css';
+import styles from './login.module.css';
 
 function Login() {
   const [name, setFormInfo] = useState('');
@@ -27,28 +27,28 @@ function Login() {
 
   return (
     <div className="container-login">
-      <div className="container-forms">
+      <div className={ styles.containerForms }>
         <form
           onSubmit={ (event) => handleSubmit(event) }
         >
-          <h1 className="name-music">Music Tunes</h1>
+          <h1 className={ styles.nameMusic }>Music Tunes</h1>
           <label>
             <input
               value={ name }
               onChange={ (event) => handleChange(event) }
               type="text"
               placeholder="Digite seu nome"
-              className="login-name-input"
+              className={ styles.inputName }
             />
           </label>
           <Button
             type="submit"
-            className="login-submit-button"
+            className={ styles.submitButton }
             disabled={ name.length < 3 }
           >
             Entrar
           </Button>
-          {!removeLoading && (<Loading className="loading-page" />)}
+          {!removeLoading && (<Loading className={ styles.loadingPage } />)}
         </form>
       </div>
     </div>

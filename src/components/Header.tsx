@@ -1,9 +1,9 @@
-import './styles/Header.css';
+import styles from './styles/Header.module.css';
 
 export default function Header({ children }: any) {
   return (
-    <div className="main-content">
-      <header className="topNav">
+    <div className={ styles.mainContent }>
+      <header className={ styles.topNav }>
         { children }
       </header>
     </div>

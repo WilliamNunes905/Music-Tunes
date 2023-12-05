@@ -1,14 +1,14 @@
 import { NavLink } from 'react-router-dom';
-import './styles/NavBar.css';
+import styles from './styles/NavBar.module.css';
 
 export default function NavBar() {
   return (
     <nav>
-      <div className="nav-link">
-        <NavLink className="menus" to="/">Login</NavLink>
-        <NavLink className="menus" to="/search">Pesquisa</NavLink>
-        <NavLink className="menus" to="/album/:id">Album</NavLink>
-        <NavLink className="menus" to="/profile">Perfil</NavLink>
+      <div className={ styles.navLink }>
+        <NavLink className={ styles.menus } to="/">Login</NavLink>
+        <NavLink className={ styles.menus } to="/search">Pesquisa</NavLink>
+        <NavLink className={ styles.menus } to="/album/:id">Album</NavLink>
+        <NavLink className={ styles.menus } to="/profile">Perfil</NavLink>
       </div>
     </nav>
   );

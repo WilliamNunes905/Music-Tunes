@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(90deg,
+    rgb(69, 68, 70) 0%, rgb(29, 29, 239) 35%, rgb(69, 224, 255) 100%);
+    color: black;
+    font-size: 16px; /* Escolha o tamanho de fonte desejado */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nameMusic, .loadingPage {
+    text-align: center;
+}
+
+.containerForms {
+    align-items: center;
+    background: linear-gradient(90deg
+    ,rgba(2, 0, 36, 1) 0%, rgb(33, 33, 136) 35%, rgba(0, 212, 255, 1) 100%);
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 26px #8291b433;
+    display: flex;
+    flex-direction: center;
+    height: 450px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 750px;
+}
+
+.inputName {
+    border: 1px solid rgb(0, 57, 230);
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: rgb(0, 57, 230);
+    font-size: 18px;
+    font-weight: 400;
+    height: 40px;
+    margin-top: 20px;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.submitButton {
+    background-color: rgba(0, 59, 229, 1);
+    border: 1px solid rgb(0, 57, 230);
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    height: 40px;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.submitButton:disabled {
+    background-color: rgba(57, 105, 248, 0.804);
+}
+
